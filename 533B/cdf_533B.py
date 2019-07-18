@@ -41,13 +41,13 @@ class CodeforcesTask533BSolution:
             if v[6]:
                 if v[8] % 2:
                     v[6].sort(reverse=True)
-                    v[7] = sum(v[6][:-1])
+                    v[7] = sum(v[6][:-1]) + max(v[1], v[6][-1])
                     v[9] += [(x, 0) for x in v[6][:-1]] + [(v[6][-1], v[4])]
                 else:
-                    v[7] = sum(v[6])
+                    v[7] = sum(v[6]) + v[1]
                     v[9] += [(x, 0) for x in v[6]]
             if v[0] > 0:
-                self.workers[v[0] - 1][6].append(v[7] + v[1])
+                self.workers[v[0] - 1][6].append(v[7])
                 self.workers[v[0] - 1][9] += v[9]
                 if v[8] % 2:
                     self.workers[v[0] - 1][8] += v[8]
