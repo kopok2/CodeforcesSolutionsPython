@@ -7,5 +7,5 @@
             Solution.process_task()
             actual = Solution.get_result()
 
-        self.assertEquals(expected, actual)
+        self.assertEqual(expected, actual)
 
