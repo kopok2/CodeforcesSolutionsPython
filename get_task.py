@@ -7,7 +7,7 @@ from random import randrange
 TEST_TEMPLATE_PATH = "empty_test.py"
 TESTCASE_TEMPLATE_PATH = "empty_testcase.py"
 SOLUTION_TEMPLATE_PATH = "empty_solution.py"
-LEVEL = "A"
+LEVEL = "B"
 
 
 def get_task():
