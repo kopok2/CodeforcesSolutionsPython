@@ -27,7 +27,7 @@ class CodeforcesTask989BSolution:
             if self.records[x] == "1" and self.records[x + self.n_p[1]] == "0":
                 fixed = False
                 break
-            if self.records[x] == "0" and self.records[X + self.n_p[1]] == "1":
+            if self.records[x] == "0" and self.records[x + self.n_p[1]] == "1":
                 fixed = False
                 break
         if not fixed:
