@@ -8,7 +8,7 @@ TEST_TEMPLATE_PATH = "empty_test.py"
 TESTCASE_TEMPLATE_PATH = "empty_testcase.py"
 SOLUTION_TEMPLATE_PATH = "empty_solution.py"
 LEVEL = "A"
-RANDOMIZED = True
+RANDOMIZED = False
 
 
 def get_task():
