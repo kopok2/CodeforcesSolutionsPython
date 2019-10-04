@@ -8,11 +8,14 @@ TEST_TEMPLATE_PATH = "empty_test.py"
 TESTCASE_TEMPLATE_PATH = "empty_testcase.py"
 SOLUTION_TEMPLATE_PATH = "empty_solution.py"
 LEVEL = "A"
-RANDOMIZED = False
+RANDOMIZED = True
 
 
 def get_task():
     NUMBER = randrange(1150) if RANDOMIZED else int(input("Enter problem number:"))
+    global LEVEL
+    if not RANDOMIZED:
+        LEVEL = input("Enter problem level:")
     TASK_ID = str(NUMBER) + LEVEL
     while TASK_ID in os.listdir():
         NUMBER = randrange(1150)
