@@ -7,7 +7,7 @@ class CodeforcesTask70ASolution:
         self.n = int(input())
 
     def process_task(self):
-        self.result = str(0 if not self.n else 3 ** (self.n - 1) % (10**6 + 3))
+        self.result = str(1 if not self.n else 3 ** (self.n - 1) % (10**6 + 3))
 
     def get_result(self):
         return self.result
