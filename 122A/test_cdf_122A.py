@@ -1,0 +1,43 @@
+import unittest
+from unittest.mock import patch
+
+from cdf_122A import CodeforcesTask122ASolution
+
+
+class TestCDF122A(unittest.TestCase):
+    def test_122A_acceptance_1(self):
+        mock_input = ['47']
+        expected = 'YES'
+        with patch('builtins.input', side_effect=mock_input):
+            Solution = CodeforcesTask122ASolution()
+            Solution.read_input()
+            Solution.process_task()
+            actual = Solution.get_result()
+
+        self.assertEqual(expected, actual)
+
+    def test_122A_acceptance_2(self):
+        mock_input = ['16']
+        expected = 'YES'
+        with patch('builtins.input', side_effect=mock_input):
+            Solution = CodeforcesTask122ASolution()
+            Solution.read_input()
+            Solution.process_task()
+            actual = Solution.get_result()
+
+        self.assertEqual(expected, actual)
+
+    def test_122A_acceptance_3(self):
+        mock_input = ['78']
+        expected = 'NO'
+        with patch('builtins.input', side_effect=mock_input):
+            Solution = CodeforcesTask122ASolution()
+            Solution.read_input()
+            Solution.process_task()
+            actual = Solution.get_result()
+
+        self.assertEqual(expected, actual)
+
+
+if __name__ == "__main__":
+    unittest.main()
